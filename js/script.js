@@ -25,14 +25,6 @@ const mapStyles = [
         ],
     },
     {
-        elementType: 'labels.text',
-        stylers: [
-            {
-                visibility: 'on',
-            },
-        ],
-    },
-    {
         featureType: 'administrative',
         stylers: [
             {
@@ -93,7 +85,7 @@ const positions = {
 function initMap() {
     const styledMapType = new google.maps.StyledMapType(mapStyles);
     const map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: -5.023, lng: -10.556 },
+        center: { lat: 2.023, lng: -10.556 },
         zoom: zoom,
         mapTypeControl: false,
         streetViewControl: false,

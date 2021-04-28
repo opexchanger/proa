@@ -69,24 +69,27 @@
                 </nav>
 
                 <div id="map">
-                    <img src="img/world-map.png" alt="Temporario" />
+                    <!-- <img src="img/world-map.png" alt="Temporario" /> -->
                 </div>
             </section>
 
-            <section class="select">
-                <div class="container select-primary">
+            <section class="select select--regions">
+                <div class="container">
                     <h2 class="select__title">Selecione a região</h2>
                     <div class="select__options">
-                        <a href="#" class="select__link active">
+                        <a
+                            href="#"
+                            class="select__link select__link--regions active"
+                        >
                             All <span>15</span>
                         </a>
-                        <a href="#" class="select__link">
+                        <a href="#" class="select__link select__link--regions">
                             Europa <span>4</span>
                         </a>
-                        <a href="#" class="select__link">
+                        <a href="#" class="select__link select__link--regions">
                             América do Norte <span>3</span>
                         </a>
-                        <a href="#" class="select__link">
+                        <a href="#" class="select__link select__link--regions">
                             América do Sul <span>8</span>
                         </a>
                     </div>
@@ -95,30 +98,60 @@
 
             <div class="container">
                 <div class="selected-grid">
-                    <section class="select">
+                    <section class="select select--countries">
                         <h2 class="select__title">Região selecionada</h2>
-                        <div class="select__options">
-                            <a href="#" class="select__link active">
-                                France <span>4</span>
-                            </a>
-                            <a href="#" class="select__link">
-                                Spain <span>2</span>
-                            </a>
-                            <a href="#" class="select__link">
-                                Italy <span>3</span>
-                            </a>
-                            <a href="#" class="select__link">
-                                Switzerland <span>1</span>
-                            </a>
-                            <a href="#" class="select__link">
-                                Scotland <span>2</span>
-                            </a>
-                        </div>
+                        <ul class="select__options select__options--countries">
+                            <li class="select__item">
+                                <a
+                                    href="#"
+                                    class="select__link select__link--countries active"
+                                >
+                                    France <span>4</span>
+                                </a>
+                            </li>
+                            <li class="select__item">
+                                <a
+                                    href="#"
+                                    class="select__link select__link--countries"
+                                >
+                                    Spain <span>2</span>
+                                </a>
+                            </li>
+
+                            <li class="select__item">
+                                <a
+                                    href="#"
+                                    class="select__link select__link--countries"
+                                >
+                                    Italy <span>3</span>
+                                </a>
+                            </li>
+
+                            <li class="select__item">
+                                <a
+                                    href="#"
+                                    class="select__link select__link--countries"
+                                >
+                                    Switzerland <span>1</span>
+                                </a>
+                            </li>
+
+                            <li class="select__item">
+                                <a
+                                    href="#"
+                                    class="select__link select__link--countries"
+                                >
+                                    Scotland <span>2</span>
+                                </a>
+                            </li>
+                        </ul>
                     </section>
 
                     <section class="selecionado">
-                        <h2 class="section__title">Lugar selecionado</h2>
-                        <p class="section__subtitle">
+                        <h2 class="selecionado__title mbottom-0">
+                            Lugar selecionado
+                        </h2>
+                        <p class="selecionado__subtitle">
                             Consectetur adipisicing elit. Hic!
                         </p>
                         <div class="blocks">
@@ -149,6 +182,7 @@
                                     class="block__icon"
                                 />
                                 <h3 class="block__title">Estados Unidos</h3>
+                                <div class="block__overlay"></div>
                             </div>
 
                             <div
@@ -163,6 +197,7 @@
                                     class="block__icon"
                                 />
                                 <h3 class="block__title">Canadá</h3>
+                                <div class="block__overlay"></div>
                             </div>
 
                             <div
@@ -177,6 +212,7 @@
                                     class="block__icon"
                                 />
                                 <h3 class="block__title">Peru</h3>
+                                <div class="block__overlay"></div>
                             </div>
                         </div>
                     </section>
@@ -220,9 +256,9 @@
         </main>
         <script src="/js/script.js"></script>
         <!-- Script que chama o google map -->
-        <!-- <script
+        <script
             async
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjr-FcWUb6gOFbTl2IeicGvL4goSOBZ5E&callback=initMap"
-        ></script> -->
+        ></script>
     </body>
 </html>
