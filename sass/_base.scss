@@ -26,10 +26,15 @@ html {
         // width >1800?
         font-size: 75%; //1 rem = 12px
     }
+
+    @media (min-width: 2400px) {
+        // width >1800?
+        font-size: 80%; //1 rem = 12px
+    }
 }
 
 body {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
     padding: 0;
@@ -46,6 +51,7 @@ img {
 h1,
 h2,
 h3,
+h4,
 p {
     margin-top: 0;
 }

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Proa Viagens</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header__container">
+                <button aria-label="Open navigation" class="nav__btn-open">
+                    &#9776;
+                </button>
+
+                <nav class="nav">
+                    <button
+                        aria-label="Close navigation"
+                        class="nav__btn-close"
+                    >
+                        &times;
+                    </button>
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link current"
+                                >home</a
+                            >
+                        </li>
+                        <li class="nav__item">
+                            <a href="about.html" class="nav__link">about us</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="contact.html" class="nav__link">contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="destinos">
+            <section class="header-destinos">
+                <nav class="nav-desktop">
+                    <ul class="nav-desktop__list">
+                        <li class="nav-desktop__item">
+                            <a href="/index.html" class="nav-desktop__link"
+                                >Home</a
+                            >
+                        </li>
+                        <li class="nav-desktop__item">
+                            <a href="#" class="nav-desktop__link">Roteiros</a>
+                        </li>
+                        <li class="nav-desktop__item">
+                            <a href="#" class="nav-desktop__link"
+                                >Por que a PROA</a
+                            >
+                        </li>
+                        <li class="nav-desktop__item">
+                            <a href="#" class="nav-desktop__link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div id="map">
+                    <img src="img/world-map.png" alt="Temporario" />
+                </div>
+            </section>
+
+            <section class="select">
+                <div class="container select-primary">
+                    <h2 class="select__title">Selecione a região</h2>
+                    <div class="select__options">
+                        <a href="#" class="select__link active">
+                            All <span>15</span>
+                        </a>
+                        <a href="#" class="select__link">
+                            Europa <span>4</span>
+                        </a>
+                        <a href="#" class="select__link">
+                            América do Norte <span>3</span>
+                        </a>
+                        <a href="#" class="select__link">
+                            América do Sul <span>8</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <div class="selected-grid">
+                    <section class="select">
+                        <h2 class="select__title">Região selecionada</h2>
+                        <div class="select__options">
+                            <a href="#" class="select__link active">
+                                France <span>4</span>
+                            </a>
+                            <a href="#" class="select__link">
+                                Spain <span>2</span>
+                            </a>
+                            <a href="#" class="select__link">
+                                Italy <span>3</span>
+                            </a>
+                            <a href="#" class="select__link">
+                                Switzerland <span>1</span>
+                            </a>
+                            <a href="#" class="select__link">
+                                Scotland <span>2</span>
+                            </a>
+                        </div>
+                    </section>
+
+                    <section class="selecionado">
+                        <h2 class="section__title">Lugar selecionado</h2>
+                        <p class="section__subtitle">
+                            Consectetur adipisicing elit. Hic!
+                        </p>
+                        <div class="blocks">
+                            <div
+                                class="block"
+                                style="
+                                    background-image: url('/img/trip-bg-1.jpeg');
+                                "
+                            >
+                                <img
+                                    src="img/icon-fake-alpes.png"
+                                    alt="Icon"
+                                    class="block__icon"
+                                />
+                                <h3 class="block__title">Alpes</h3>
+                                <div class="block__overlay"></div>
+                            </div>
+
+                            <div
+                                class="block"
+                                style="
+                                    background-image: url('/img/trip-bg-2.jpg');
+                                "
+                            >
+                                <img
+                                    src="img/icon-fake-eua.png"
+                                    alt="Icon"
+                                    class="block__icon"
+                                />
+                                <h3 class="block__title">Estados Unidos</h3>
+                            </div>
+
+                            <div
+                                class="block"
+                                style="
+                                    background-image: url('/img/trip-bg-1.jpeg');
+                                "
+                            >
+                                <img
+                                    src="img/icon-fake-canada.png"
+                                    alt="Icon"
+                                    class="block__icon"
+                                />
+                                <h3 class="block__title">Canadá</h3>
+                            </div>
+
+                            <div
+                                class="block"
+                                style="
+                                    background-image: url('/img/trip-bg-2.jpg');
+                                "
+                            >
+                                <img
+                                    src="img/icon-fake-peru.png"
+                                    alt="Icon"
+                                    class="block__icon"
+                                />
+                                <h3 class="block__title">Peru</h3>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <section class="section expert">
+                <div class="container">
+                    <img
+                        src="img/expert-fake.jpg"
+                        alt="Expert"
+                        class="expert__img"
+                    />
+                    <h2 class="section__title">Lorem ipsum dolor sit amet.</h2>
+                    <div class="expert__content">
+                        <p class="section__text expert__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Distinctio, incidunt dolor vel dolorem sint
+                            odio voluptatibus at aut nisi numquam magnam optio
+                            facilis porro excepturi repudiandae deleniti quidem
+                            eligendi? Eum impedit dolorum, assumenda atque harum
+                            aliquam aperiam omnis a incidunt.
+                        </p>
+                        <div class="contact">
+                            <div class="contact__icon">
+                                <span>&#128231;</span>
+                                email@mail.com
+                            </div>
+                            <div class="contact__icon">
+                                <span>&#128222;</span>
+                                +55 (51) 9928-2983
+                            </div>
+                            <div class="contact__icon">
+                                <span>&#x1f3a7;</span>
+                                Agende uma call
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="/js/script.js"></script>
+        <!-- Script que chama o google map -->
+        <!-- <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjr-FcWUb6gOFbTl2IeicGvL4goSOBZ5E&callback=initMap"
+        ></script> -->
+    </body>
+</html>

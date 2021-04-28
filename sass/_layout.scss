@@ -19,7 +19,7 @@
     }
 
     &__subtitle {
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
     }
 
     &__text {
@@ -106,158 +106,43 @@
 }
 
 .nav-desktop {
-    padding: 1rem;
+    display: none;
+    @media (min-width: 900px) {
+        display: block;
+    }
+    padding: 0.6rem 1.5rem;
     position: absolute;
-    top: 2rem;
+    top: 2.2rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 50vw;
+    background-color: $color-white;
+    border-radius: 3rem;
+    box-shadow: 0px 3px 6px 1px rgba($color-black, 0.25);
+    z-index: 2;
 
     &__list {
+        text-align: center;
+        white-space: nowrap;
         list-style: none;
-        display: flex;
-        justify-content: space-around;
         margin: 0;
         padding: 0;
+
+        display: flex;
+        justify-content: space-around;
     }
 
     &__item {
-        background-color: $color-primary;
-        padding: 0.2rem 1rem;
+        padding: 0.2rem;
+        margin: 0 2.4rem;
     }
 
     &__link {
         text-decoration: none;
-        color: $color-white;
+        color: $color-primary;
     }
 }
 
-/* ==== HERO ==== */
-.hero {
-    padding: 17rem 0 15rem 0;
-    background: url('../img/world-map.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__content {
-        text-align: center;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 4rem;
-
-        @media (min-width: 600px) {
-            img {
-                max-height: 240px;
-            }
-        }
-    }
-
-    &__title {
-        font-size: 3rem;
-        line-height: 1.4;
-        margin-bottom: 3rem;
-    }
-
-    &__bottomline {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 95%;
-        transform: translateX(2.5%);
-        border-radius: 10px;
-        background-color: $color-green;
-        color: $color-white;
-    }
-
-    // um tile fica basicamente com 5rem de altura
-    &__tiles {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 1.5rem 0.5rem;
-
-        &__tile {
-            text-transform: uppercase;
-            margin: 0 0.5rem;
-            line-height: 1.15;
-            text-align: center;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            @media (min-width: 365px) {
-                flex-direction: row;
-                text-align: left;
-            }
-
-            p {
-                font-size: 1.5rem;
-                margin-bottom: 0;
-            }
-
-            span {
-                font-size: 1rem;
-                display: block;
-            }
-        }
-
-        &__icon {
-            height: 2.4rem;
-            margin-right: 0.5rem;
-            filter: brightness(0) invert(1);
-
-            @media (max-width: 365px) {
-                margin-bottom: 0.6rem;
-            }
-        }
-    }
-}
-
-.experience {
-    padding-top: 6rem;
-}
-
-/* ==== DIFFERENCES ==== */
-.diff {
-    background: url('../img/bg-paisagem-3.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding-bottom: 0;
-    color: $color-white;
-
-    &__text {
-        margin: 0 auto;
-        margin-top: 2rem;
-        max-width: 64rem;
-
-        @media (min-width: 600px) {
-            margin-top: 4rem;
-        }
-    }
-
-    &__media {
-        display: inline-block;
-        margin: 4rem auto -4.5rem auto;
-        max-height: 360px;
-        box-shadow: 0px 13px 18px -7px rgba(0, 0, 0, 0.6);
-
-        @media (min-width: 600px) {
-            margin-top: 8rem;
-        }
-    }
-}
-
+/* ==== DESTINOS ==== */
 .dest {
     background-color: rgba(lighten($color-green, 15%), 0.8);
 
@@ -275,6 +160,7 @@
     }
 }
 
+/* ==== EXPERT ==== */
 .expert {
     background: url('../img/bg-paisagem-4.jpg');
     background-size: cover;

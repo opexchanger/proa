@@ -43,34 +43,39 @@
                     </ul>
                 </nav>
             </div>
-
-            <nav class="nav-desktop">
-                <ul class="nav-desktop__list">
-                    <li class="nav-desktop__item">
-                        <a href="#" class="nav-desktop__link">Viagens</a>
-                    </li>
-                    <li class="nav-desktop__item">
-                        <a href="#" class="nav-desktop__link">Roteiros</a>
-                    </li>
-                    <li class="nav-desktop__item">
-                        <a href="#" class="nav-desktop__link">Porque a PROA</a>
-                    </li>
-                    <li class="nav-desktop__item">
-                        <a href="#" class="nav-desktop__link">Contato</a>
-                    </li>
-                </ul>
-            </nav>
         </header>
 
         <main>
             <section class="hero">
+                <nav class="nav-desktop">
+                    <ul class="nav-desktop__list">
+                        <li class="nav-desktop__item">
+                            <a href="destinos.html" class="nav-desktop__link"
+                                >Destinos</a
+                            >
+                        </li>
+                        <li class="nav-desktop__item">
+                            <a href="#" class="nav-desktop__link">Roteiros</a>
+                        </li>
+                        <li class="nav-desktop__item">
+                            <a href="#" class="nav-desktop__link"
+                                >Por que a PROA</a
+                            >
+                        </li>
+                        <li class="nav-desktop__item">
+                            <a href="#" class="nav-desktop__link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="container">
                     <div class="hero__content">
-                        <img
-                            src="img/logo-proa-small.webp"
-                            alt="Logo"
-                            class="hero__logo"
-                        />
+                        <picture class="hero__logo">
+                            <source
+                                srcset="img/logo-proa-small.webp"
+                                media="(max-width: 900px)"
+                            />
+                            <img srcset="img/logo-proa.webp" alt="Logo" />
+                        </picture>
                         <h1 class="hero__title">
                             A frase chamativa da Proa Viagens
                         </h1>
@@ -114,8 +119,8 @@
                 </div>
             </section>
 
-            <div class="container">
-                <section class="section experience">
+            <section class="section experience">
+                <div class="container">
                     <h2 class="section__title">Lorem ipsum dolor sit</h2>
                     <p class="section__subtitle">
                         Consectetur adipisicing elit. Hic!
@@ -147,72 +152,60 @@
                             </div>
                         </div>
 
-                        <div class="block">
-                            <div class="block__bg">
-                                <img
-                                    class="img-fit"
-                                    src="/img/trip-bg-1.jpeg"
-                                    alt="Trip Background"
-                                />
-                            </div>
+                        <div
+                            class="block"
+                            style="background-image: url('/img/trip-bg-1.jpeg')"
+                        >
                             <img
                                 src="img/icon-fake-alpes.png"
                                 alt="Icon"
                                 class="block__icon"
                             />
                             <h3 class="block__title">Alpes</h3>
+                            <div class="block__overlay"></div>
                         </div>
 
-                        <div class="block">
-                            <div class="block__bg">
-                                <img
-                                    class="img-fit"
-                                    src="/img/trip-bg-2.jpg"
-                                    alt="Trip Background"
-                                />
-                            </div>
+                        <div
+                            class="block"
+                            style="background-image: url('/img/trip-bg-2.jpg')"
+                        >
                             <img
                                 src="img/icon-fake-eua.png"
                                 alt="Icon"
                                 class="block__icon"
                             />
                             <h3 class="block__title">Estados Unidos</h3>
+                            <div class="block__overlay"></div>
                         </div>
 
-                        <div class="block">
-                            <div class="block__bg">
-                                <img
-                                    class="img-fit"
-                                    src="/img/trip-bg-1.jpeg"
-                                    alt="Trip Background"
-                                />
-                            </div>
+                        <div
+                            class="block"
+                            style="background-image: url('/img/trip-bg-1.jpeg')"
+                        >
                             <img
                                 src="img/icon-fake-canada.png"
                                 alt="Icon"
                                 class="block__icon"
                             />
                             <h3 class="block__title">Canadá</h3>
+                            <div class="block__overlay"></div>
                         </div>
 
-                        <div class="block">
-                            <div class="block__bg">
-                                <img
-                                    class="img-fit"
-                                    src="/img/trip-bg-2.jpg"
-                                    alt="Trip Background"
-                                />
-                            </div>
+                        <div
+                            class="block"
+                            style="background-image: url('/img/trip-bg-2.jpg')"
+                        >
                             <img
                                 src="img/icon-fake-peru.png"
                                 alt="Icon"
                                 class="block__icon"
                             />
                             <h3 class="block__title">Peru</h3>
+                            <div class="block__overlay"></div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
             <section class="section diff">
                 <div class="container">
