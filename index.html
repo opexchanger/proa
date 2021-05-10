@@ -1,288 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/main.css" />
-        <title>Proa Viagens</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="container header__container">
-                <button aria-label="Open navigation" class="nav__btn-open">
-                    &#9776;
-                </button>
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Proa Viagens</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <button aria-label="Open navigation" class="nav__btn-open">
+          &#9776;
+        </button>
 
-                <nav class="nav">
-                    <button
-                        aria-label="Close navigation"
-                        class="nav__btn-close"
-                    >
-                        &times;
-                    </button>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="index.html" class="nav__link current"
-                                >home</a
-                            >
-                        </li>
-                        <li class="nav__item">
-                            <a href="about.html" class="nav__link">about us</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="contact.html" class="nav__link">contact</a>
-                        </li>
-                    </ul>
-                </nav>
+        <nav class="nav">
+          <button aria-label="Close navigation" class="nav__btn-close">
+            &times;
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__link current">home</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">about us</a>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html" class="nav__link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <nav class="nav-desktop">
+          <ul class="nav-desktop__list">
+            <li class="nav-desktop__item">
+              <a href="destinos.html" class="nav-desktop__link">Destinos</a>
+            </li>
+            <li class="nav-desktop__item">
+              <a href="#" class="nav-desktop__link">Roteiros</a>
+            </li>
+            <li class="nav-desktop__item">
+              <a href="#" class="nav-desktop__link">Por que a PROA</a>
+            </li>
+            <li class="nav-desktop__item">
+              <a href="#" class="nav-desktop__link">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container">
+          <div class="hero__content">
+            <picture class="hero__logo">
+              <source
+                srcset="img/logo-proa-small.webp"
+                media="(max-width: 900px)"
+              />
+              <img srcset="img/logo-proa.webp" alt="Logo" />
+            </picture>
+            <h1 class="hero__title">A frase chamativa da Proa Viagens</h1>
+            <a href="#" class="button button--cta">Agende agora</a>
+          </div>
+          <div class="hero__bottomline">
+            <div class="container">
+              <div class="hero__tiles">
+                <div class="hero__tiles__tile">
+                  <img
+                    src="img/icon-check.png"
+                    alt="Check"
+                    class="hero__tiles__icon"
+                  />
+                  <p><span>O melhor preço de </span>Passagens</p>
+                </div>
+                <div class="hero__tiles__tile">
+                  <img
+                    src="img/icon-check.png"
+                    alt="Check"
+                    class="hero__tiles__icon"
+                  />
+                  <p><span>Sem estresse com </span>Bagagem</p>
+                </div>
+                <div class="hero__tiles__tile">
+                  <img
+                    src="img/icon-check.png"
+                    alt="Check"
+                    class="hero__tiles__icon"
+                  />
+                  <p><span>O melhor preço de </span>Hospedagens</p>
+                </div>
+              </div>
             </div>
-        </header>
+          </div>
+        </div>
+      </section>
 
-        <main>
-            <section class="hero">
-                <nav class="nav-desktop">
-                    <ul class="nav-desktop__list">
-                        <li class="nav-desktop__item">
-                            <a href="destinos.html" class="nav-desktop__link"
-                                >Destinos</a
-                            >
-                        </li>
-                        <li class="nav-desktop__item">
-                            <a href="#" class="nav-desktop__link">Roteiros</a>
-                        </li>
-                        <li class="nav-desktop__item">
-                            <a href="#" class="nav-desktop__link"
-                                >Por que a PROA</a
-                            >
-                        </li>
-                        <li class="nav-desktop__item">
-                            <a href="#" class="nav-desktop__link">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="container">
-                    <div class="hero__content">
-                        <picture class="hero__logo">
-                            <source
-                                srcset="img/logo-proa-small.webp"
-                                media="(max-width: 900px)"
-                            />
-                            <img srcset="img/logo-proa.webp" alt="Logo" />
-                        </picture>
-                        <h1 class="hero__title">
-                            A frase chamativa da Proa Viagens
-                        </h1>
-                        <a href="#" class="button button--cta">Agende agora</a>
-                    </div>
-                    <div class="hero__bottomline">
-                        <div class="container">
-                            <div class="hero__tiles">
-                                <div class="hero__tiles__tile">
-                                    <img
-                                        src="img/icon-check.png"
-                                        alt="Check"
-                                        class="hero__tiles__icon"
-                                    />
-                                    <p>
-                                        <span>O melhor preço de </span>Passagens
-                                    </p>
-                                </div>
-                                <div class="hero__tiles__tile">
-                                    <img
-                                        src="img/icon-check.png"
-                                        alt="Check"
-                                        class="hero__tiles__icon"
-                                    />
-                                    <p><span>Sem estresse com </span>Bagagem</p>
-                                </div>
-                                <div class="hero__tiles__tile">
-                                    <img
-                                        src="img/icon-check.png"
-                                        alt="Check"
-                                        class="hero__tiles__icon"
-                                    />
-                                    <p>
-                                        <span>O melhor preço de </span
-                                        >Hospedagens
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+      <section class="section experience">
+        <div class="container">
+          <h2 class="section__title">Lorem ipsum dolor sit</h2>
+          <p class="section__subtitle">Consectetur adipisicing elit. Hic!</p>
+          <div class="blocks">
+            <div class="call">
+              <div class="call__left">
+                <img
+                  class="call__img img-fit"
+                  src="img/trip-feat-bg.jpg"
+                  alt="Travel pic"
+                />
+              </div>
+              <div class="call__right">
+                <div class="call__text">
+                  <h3 class="call__text__title">Lorem Ipsum</h3>
+                  <p class="call__text__description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Molestias facere accusamus quod minima, impedit quidem sunt.
+                  </p>
                 </div>
-            </section>
+                <a href="#" class="button button--block"
+                  >Clique para saber mais</a
+                >
+              </div>
+            </div>
 
-            <section class="section experience">
-                <div class="container">
-                    <h2 class="section__title">Lorem ipsum dolor sit</h2>
-                    <p class="section__subtitle">
-                        Consectetur adipisicing elit. Hic!
-                    </p>
-                    <div class="blocks">
-                        <div class="call">
-                            <div class="call__left">
-                                <img
-                                    class="call__img img-fit"
-                                    src="img/trip-feat-bg.jpg"
-                                    alt="Travel pic"
-                                />
-                            </div>
-                            <div class="call__right">
-                                <div class="call__text">
-                                    <h3 class="call__text__title">
-                                        Lorem Ipsum
-                                    </h3>
-                                    <p class="call__text__description">
-                                        Lorem ipsum dolor sit amet consectetur,
-                                        adipisicing elit. Molestias facere
-                                        accusamus quod minima, impedit quidem
-                                        sunt.
-                                    </p>
-                                </div>
-                                <a href="#" class="button button--block"
-                                    >Clique para saber mais</a
-                                >
-                            </div>
-                        </div>
+            <div
+              class="block"
+              style="background-image: url('img/trip-bg-1.jpeg')"
+            >
+              <img
+                src="img/icon-fake-alpes.png"
+                alt="Icon"
+                class="block__icon"
+              />
+              <h3 class="block__title">Alpes</h3>
+              <div class="block__overlay"></div>
+            </div>
 
-                        <div
-                            class="block"
-                            style="background-image: url('/img/trip-bg-1.jpeg')"
-                        >
-                            <img
-                                src="img/icon-fake-alpes.png"
-                                alt="Icon"
-                                class="block__icon"
-                            />
-                            <h3 class="block__title">Alpes</h3>
-                            <div class="block__overlay"></div>
-                        </div>
+            <div
+              class="block"
+              style="background-image: url('img/trip-bg-2.jpg')"
+            >
+              <img src="img/icon-fake-eua.png" alt="Icon" class="block__icon" />
+              <h3 class="block__title">Estados Unidos</h3>
+              <div class="block__overlay"></div>
+            </div>
 
-                        <div
-                            class="block"
-                            style="background-image: url('/img/trip-bg-2.jpg')"
-                        >
-                            <img
-                                src="img/icon-fake-eua.png"
-                                alt="Icon"
-                                class="block__icon"
-                            />
-                            <h3 class="block__title">Estados Unidos</h3>
-                            <div class="block__overlay"></div>
-                        </div>
+            <div
+              class="block"
+              style="background-image: url('img/trip-bg-1.jpeg')"
+            >
+              <img
+                src="img/icon-fake-canada.png"
+                alt="Icon"
+                class="block__icon"
+              />
+              <h3 class="block__title">Canadá</h3>
+              <div class="block__overlay"></div>
+            </div>
 
-                        <div
-                            class="block"
-                            style="background-image: url('/img/trip-bg-1.jpeg')"
-                        >
-                            <img
-                                src="img/icon-fake-canada.png"
-                                alt="Icon"
-                                class="block__icon"
-                            />
-                            <h3 class="block__title">Canadá</h3>
-                            <div class="block__overlay"></div>
-                        </div>
+            <div
+              class="block"
+              style="background-image: url('img/trip-bg-2.jpg')"
+            >
+              <img
+                src="img/icon-fake-peru.png"
+                alt="Icon"
+                class="block__icon"
+              />
+              <h3 class="block__title">Peru</h3>
+              <div class="block__overlay"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                        <div
-                            class="block"
-                            style="background-image: url('/img/trip-bg-2.jpg')"
-                        >
-                            <img
-                                src="img/icon-fake-peru.png"
-                                alt="Icon"
-                                class="block__icon"
-                            />
-                            <h3 class="block__title">Peru</h3>
-                            <div class="block__overlay"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+      <section class="section diff">
+        <div class="container">
+          <h2 class="section__title">Lorem ipsum dolor sit.</h2>
+          <p class="section__text diff__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et debitis
+            accusantium, doloribus reiciendis nostrum velit id nesciunt.
+            Dignissimos earum illum ea quam obcaecati aliquid odio hic
+            explicabo, ad accusamus a laboriosam quos voluptates distinctio odit
+            molestias? Officia commodi nulla officiis?
+          </p>
+          <img src="img/video-fake.jpg" alt="Difference" class="diff__media" />
+        </div>
+      </section>
 
-            <section class="section diff">
-                <div class="container">
-                    <h2 class="section__title">Lorem ipsum dolor sit.</h2>
-                    <p class="section__text diff__text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Et debitis accusantium, doloribus reiciendis
-                        nostrum velit id nesciunt. Dignissimos earum illum ea
-                        quam obcaecati aliquid odio hic explicabo, ad accusamus
-                        a laboriosam quos voluptates distinctio odit molestias?
-                        Officia commodi nulla officiis?
-                    </p>
-                    <img
-                        src="img/video-fake.jpg"
-                        alt="Difference"
-                        class="diff__media"
-                    />
-                </div>
-            </section>
+      <section class="section dest">
+        <div class="container">
+          <h2 class="section__title dest__title">Our Destinations</h2>
+          <p class="section__text dest__text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Repellendus nemo voluptate corrupti.
+          </p>
+          <div class="block">
+            <a href="#" class="dest__link">Europe</a>
+          </div>
+          <div class="block">
+            <a href="#" class="dest__link">North America</a>
+          </div>
+          <div class="block">
+            <a href="#" class="dest__link">South America</a>
+          </div>
+          <a href="#" class="button dest__button">Veja todos os destinos</a>
+        </div>
+      </section>
 
-            <section class="section dest">
-                <div class="container">
-                    <h2 class="section__title dest__title">Our Destinations</h2>
-                    <p class="section__text dest__text">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Repellendus nemo voluptate corrupti.
-                    </p>
-                    <div class="block">
-                        <a href="#" class="dest__link">Europe</a>
-                    </div>
-                    <div class="block">
-                        <a href="#" class="dest__link">North America</a>
-                    </div>
-                    <div class="block">
-                        <a href="#" class="dest__link">South America</a>
-                    </div>
-                    <a href="#" class="button dest__button"
-                        >Veja todos os destinos</a
-                    >
-                </div>
-            </section>
-
-            <section class="section expert">
-                <div class="container">
-                    <img
-                        src="img/expert-fake.jpg"
-                        alt="Expert"
-                        class="expert__img"
-                    />
-                    <h2 class="section__title">Lorem ipsum dolor sit amet.</h2>
-                    <div class="expert__content">
-                        <p class="section__text expert__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Distinctio, incidunt dolor vel dolorem sint
-                            odio voluptatibus at aut nisi numquam magnam optio
-                            facilis porro excepturi repudiandae deleniti quidem
-                            eligendi? Eum impedit dolorum, assumenda atque harum
-                            aliquam aperiam omnis a incidunt.
-                        </p>
-                        <div class="contact">
-                            <div class="contact__icon">
-                                <span>&#128231;</span>
-                                email@mail.com
-                            </div>
-                            <div class="contact__icon">
-                                <span>&#128222;</span>
-                                +55 (51) 9928-2983
-                            </div>
-                            <div class="contact__icon">
-                                <span>&#x1f3a7;</span>
-                                Agende uma call
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <script src="/js/script.js"></script>
-    </body>
+      <section class="section expert">
+        <div class="container">
+          <img src="img/expert-fake.jpg" alt="Expert" class="expert__img" />
+          <h2 class="section__title">Lorem ipsum dolor sit amet.</h2>
+          <div class="expert__content">
+            <p class="section__text expert__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Distinctio, incidunt dolor vel dolorem sint odio voluptatibus at
+              aut nisi numquam magnam optio facilis porro excepturi repudiandae
+              deleniti quidem eligendi? Eum impedit dolorum, assumenda atque
+              harum aliquam aperiam omnis a incidunt.
+            </p>
+            <div class="contact">
+              <div class="contact__icon">
+                <span>&#128231;</span>
+                email@mail.com
+              </div>
+              <div class="contact__icon">
+                <span>&#128222;</span>
+                +55 (51) 9928-2983
+              </div>
+              <div class="contact__icon">
+                <span>&#x1f3a7;</span>
+                Agende uma call
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
 </html>
