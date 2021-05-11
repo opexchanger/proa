@@ -95,6 +95,12 @@ ul {
   margin-bottom: 0;
 }
 
+@media (min-width: 900px) {
+  .section__title {
+    font-size: 4rem;
+  }
+}
+
 .section__subtitle {
   margin-bottom: 6rem;
 }
@@ -769,6 +775,7 @@ ul {
 
 .call__text__title {
   margin-bottom: 0;
+  font-size: 2.4rem;
 }
 
 .call__text__description {
@@ -821,7 +828,7 @@ ul {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(88, 88, 88, 0.1);
+  background-color: rgba(88, 88, 88, 0.2);
 }
 
 .block__title {
@@ -908,8 +915,10 @@ ul {
   line-height: 1.2;
 }
 
-.contact__icon:not(:last-child) {
-  margin-bottom: 5rem;
+@media (max-width: 600px) {
+  .contact__icon:not(:last-child) {
+    margin-bottom: 5rem;
+  }
 }
 
 .contact__icon span {

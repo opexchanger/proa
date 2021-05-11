@@ -38,6 +38,7 @@
   &__text {
     &__title {
       margin-bottom: 0;
+      font-size: 2.4rem;
     }
 
     &__description {
@@ -81,7 +82,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(88, 88, 88, 0.1);
+    background-color: rgba(88, 88, 88, 0.2);
   }
 
   &__title {
@@ -146,8 +147,11 @@
     align-items: center;
     text-align: center;
     line-height: 1.2;
-    &:not(:last-child) {
-      margin-bottom: 5rem;
+
+    @media (max-width: 600px) {
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+      }
     }
 
     span {
